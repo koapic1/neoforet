@@ -8,6 +8,8 @@ button { background: none; border: none; outline: none; }
 
 .hidden { display: none; }
 
+#header { position: fixed; width: 100%; z-index: 99; background-color: #fff; }
+
 #header #logo { position: absolute; left: 50px; }
 
 #header #logo a { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -30,4 +32,32 @@ button { background: none; border: none; outline: none; }
 
 #header #gnb .list > li .depth02 li a { display: -webkit-box; display: -ms-flexbox; display: flex; height: 60px; padding: 0 30px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
 
-#header .etc { position: absolute; right: 50px; top: 0; }
+#header .etc { position: absolute; right: 50px; top: 0; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#header .etc .item:hover button { background-color: #fff; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+#header .etc .item:hover ul { display: block; -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+
+#header .etc button { font-size: 1.6rem; text-transform: uppercase; width: 80px; height: 50px; border-radius: 5px 5px 0 0; cursor: pointer; }
+
+#header .etc .sns li a { display: block; padding: 10px 0 10px 30px; font-size: 1.4rem; position: relative; }
+
+#header .etc .sns li a:before { content: ""; display: block; position: absolute; width: 32px; height: 18px; left: 0; background-image: url("../images/layout/utility.png"); }
+
+#header .etc .sns li:nth-child(1) a:before { background-position: 0 0; }
+
+#header .etc .sns li:nth-child(2) a:before { background-position: -50px 0; }
+
+#header .etc .sns li:nth-child(3) a:before { background-position: -100px 0; }
+
+#header .etc .sns li:nth-child(4) a:before { background-position: -150px 0; }
+
+#header .etc .sns li:nth-child(5) a:before { background-position: -200px 0; }
+
+#header .etc .language ul { padding: 20px 0; }
+
+#header .etc .language ul li a { padding: 10px 0 10px 30px; }
+
+#header .etc ul { background-color: #fff; display: none; position: absolute; padding: 20px; -webkit-transition: 0.25s ease; transition: 0.25s ease; border-radius: 0 0 5px 5px; }
+
+#header .etc ul li a { display: block; min-width: 80px; }
