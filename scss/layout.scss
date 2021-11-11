@@ -110,11 +110,18 @@ button {
     .item:hover {
       button {
         background-color: #fff;
+        border: 1px solid #eee;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        color: $hover-color;
       }
       ul {
+        margin-top: -5px;
         display: block;
+        border: 1px solid #eee;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        li:hover {
+          color: $hover-color;
+        }
       }
     }
     button {
@@ -122,12 +129,54 @@ button {
       text-transform: uppercase;
       width: 80px;
       height: 50px;
+      border-bottom: none;
       border-radius: 5px 5px 0 0;
-      //transition: 0.25s ease;
       cursor: pointer;
+      position: relative;
+    }
+    ul {
+      background-color: $white-color;
+      display: none;
+      position: absolute;
+      padding: 20px;
+      transition: 0.25s ease;
+      border-radius: 0 0 5px 5px;
+      &:before {
+        content: "";
+        display: block;
+        width: 78px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+      li {
+        a {
+          display: block;
+          min-width: 80px;
+        }
+      }
+      //transition: 0.25s ease;
     }
     .sns {
       li {
+        &:nth-child(1):hover a:before {
+          background-position: 0 -50px;
+        }
+        &:nth-child(2):hover a:before {
+          background-position: -50px -50px;
+        }
+        &:nth-child(3):hover a:before {
+          background-position: -100px -50px;
+        }
+        &:nth-child(4):hover a:before {
+          background-position: -150px -50px;
+        }
+        &:nth-child(5):hover a:before {
+          background-position: -200px -50px;
+        }
+
         a {
           display: block;
           padding: 10px 0 10px 30px;
@@ -162,21 +211,6 @@ button {
       li a {
         padding: 10px 0 10px 30px;
       }
-    }
-    ul {
-      background-color: $white-color;
-      display: none;
-      position: absolute;
-      padding: 20px;
-      transition: 0.25s ease;
-      border-radius: 0 0 5px 5px;
-      li {
-        a {
-          display: block;
-          min-width: 80px;
-        }
-      }
-      //transition: 0.25s ease;
     }
   }
 }
