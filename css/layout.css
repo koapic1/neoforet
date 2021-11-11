@@ -8,11 +8,19 @@ button { background: none; border: none; outline: none; }
 
 .hidden { display: none; }
 
-#header { position: fixed; width: 100%; z-index: 99; background-color: #fff; }
+#header { position: fixed; width: 100%; z-index: 99; color: #fff; }
+
+#header:hover { background-color: #fff; color: #111111; }
+
+#header:hover #logo a .color { display: block; }
+
+#header:hover #logo a .white { display: none; }
 
 #header #logo { position: absolute; left: 50px; }
 
 #header #logo a { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#header #logo a .color { display: none; }
 
 #header #gnb .list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 

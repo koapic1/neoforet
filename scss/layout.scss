@@ -26,7 +26,19 @@ button {
   position: fixed;
   width: 100%;
   z-index: 99;
-  background-color: $white-color;
+  color: $white-color;
+  &:hover {
+    background-color: $white-color;
+    color: $text-color;
+    #logo a {
+      .color {
+        display: block;
+      }
+      .white {
+        display: none;
+      }
+    }
+  }
   #logo {
     position: absolute;
     left: 50px;
@@ -34,6 +46,9 @@ button {
       display: flex;
       height: 100px;
       align-items: center;
+      .color {
+        display: none;
+      }
     }
   }
   #gnb {
