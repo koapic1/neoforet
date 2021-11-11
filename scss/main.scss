@@ -1,5 +1,16 @@
 @import "vars";
 @import "mixins";
+.titleBox {
+  line-height: 1.5;
+  h2 {
+    font-size: $h2;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: $medium-size;
+  }
+}
 #main {
   #mainVisual {
     li {
@@ -19,16 +30,16 @@
     }
     .slogan {
       position: absolute;
-      left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      left: 50%;
+      z-index: 2;
       color: $white-color;
       text-align: center;
-      z-index: 2;
+      transform: translate(-50%, -50%);
       .main {
         font-size: $xx-large-size;
-        font-weight: 700;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
       }
       .sub {
         margin-top: 3rem;
@@ -36,16 +47,16 @@
       }
       a {
         display: inline-flex;
+        margin-top: 5rem;
         padding: 20px 40px;
         border: 1px solid $white-color;
-        border-radius: 100px;
-        margin-top: 5rem;
-        align-items: center;
         transition: 0.25s ease;
+        border-radius: 100px;
+        align-items: center;
 
         &:hover {
-          background-color: $white-color;
           color: $text-color;
+          background-color: $white-color;
         }
         span {
           margin-left: 2rem;
@@ -59,12 +70,61 @@
           background: none;
           border: 2px solid $white-color;
           opacity: 1;
-          border-radius: 100px;
           transition: 0.25s ease;
+          border-radius: 100px;
           &-active {
-            background: $white-color;
             width: 80px;
+            background: $white-color;
           }
+        }
+      }
+    }
+  }
+  //   mainVisual end
+  #product {
+    overflow: hidden;
+    position: relative;
+    .titleBox {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+    .list {
+      li {
+        position: relative;
+        a {
+          position: absolute;
+          right: 50px;
+          bottom: 50px;
+          padding: 15px 30px;
+          border: 1px solid $text-color;
+          border-radius: 100px;
+          @include flexCenter();
+          transition: 0.25s ease;
+          span {
+            margin-left: 20px;
+            color: $main-color;
+          }
+          &:hover {
+            background-color: $text-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      button {
+        @include box(100px);
+        @include flexCenter();
+        background-color: #fff;
+        span {
+          font-size: $x-large-size;
         }
       }
     }

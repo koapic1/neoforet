@@ -8,7 +8,7 @@ button { background: none; border: none; outline: none; }
 
 .hidden { display: none; }
 
-#header { position: fixed; width: 100%; z-index: 99; color: #fff; }
+#header { width: 100%; z-index: 99; color: #fff; position: fixed; }
 
 #header:hover { background-color: #fff; color: #111111; }
 
