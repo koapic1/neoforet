@@ -5,3 +5,21 @@
 #main #mainVisual li.visual02 { background-image: url("../images/main/bg2.jpg"); }
 
 #main #mainVisual li.visual03 { background-image: url("../images/main/bg3.jpg"); }
+
+#main #mainVisual .slogan { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #fff; text-align: center; z-index: 2; }
+
+#main #mainVisual .slogan .main { font-size: 6.4rem; font-weight: 700; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); }
+
+#main #mainVisual .slogan .sub { margin-top: 3rem; font-size: 2rem; }
+
+#main #mainVisual .slogan a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; padding: 20px 40px; border: 1px solid #fff; border-radius: 100px; margin-top: 5rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
+
+#main #mainVisual .slogan a:hover { background-color: #fff; color: #111111; }
+
+#main #mainVisual .slogan a span { margin-left: 2rem; }
+
+#main #mainVisual .slogan .pagination { margin-top: 50px; }
+
+#main #mainVisual .slogan .pagination .swiper-pagination-bullet { width: 20px; height: 20px; background: none; border: 2px solid #fff; opacity: 1; border-radius: 100px; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
+
+#main #mainVisual .slogan .pagination .swiper-pagination-bullet-active { background: #fff; width: 80px; }

@@ -30,7 +30,7 @@ button { background: none; border: none; outline: none; }
 
 #header #gnb .list > li:hover .depth02 { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-#header #gnb .list > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100px; padding: 0 50px; font-size: 18px; font-weight: 500; position: relative; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
+#header #gnb .list > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100px; padding: 0 50px; font-size: 1.8rem; font-weight: 500; position: relative; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
 
 #header #gnb .list > li > a:after { content: ""; display: block; position: absolute; left: 50px; right: 50px; height: 3px; background-color: #1dcb5d; top: 65px; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
 

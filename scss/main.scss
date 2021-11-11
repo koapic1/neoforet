@@ -1,3 +1,5 @@
+@import "vars";
+@import "mixins";
 #main {
   #mainVisual {
     li {
@@ -13,6 +15,57 @@
       }
       &.visual03 {
         background-image: url("../images/main/bg3.jpg");
+      }
+    }
+    .slogan {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: $white-color;
+      text-align: center;
+      z-index: 2;
+      .main {
+        font-size: $xx-large-size;
+        font-weight: 700;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+      .sub {
+        margin-top: 3rem;
+        font-size: $large-size;
+      }
+      a {
+        display: inline-flex;
+        padding: 20px 40px;
+        border: 1px solid $white-color;
+        border-radius: 100px;
+        margin-top: 5rem;
+        align-items: center;
+        transition: 0.25s ease;
+
+        &:hover {
+          background-color: $white-color;
+          color: $text-color;
+        }
+        span {
+          margin-left: 2rem;
+        }
+      }
+      .pagination {
+        margin-top: 50px;
+        .swiper-pagination-bullet {
+          width: 20px;
+          height: 20px;
+          background: none;
+          border: 2px solid $white-color;
+          opacity: 1;
+          border-radius: 100px;
+          transition: 0.25s ease;
+          &-active {
+            background: $white-color;
+            width: 80px;
+          }
+        }
       }
     }
   }
