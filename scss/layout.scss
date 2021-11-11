@@ -1,0 +1,104 @@
+@import "vars";
+@import "mixins";
+
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Lexend", "Noto Sans KR", sans-serif;
+  color: $text-color;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.hidden {
+  display: none;
+}
+
+#header {
+  #logo {
+    position: absolute;
+    left: 50px;
+    a {
+      display: flex;
+      height: 100px;
+      align-items: center;
+    }
+  }
+  #gnb {
+    .list {
+      display: flex;
+      justify-content: center;
+      > li {
+        &:hover {
+          > a {
+            color: $hover-color;
+            &:after {
+              transform: scaleX(1);
+            }
+          }
+          .depth02 {
+            display: flex;
+          }
+        }
+        > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+          padding: 0 50px;
+          font-size: $medium-size;
+          font-weight: 500;
+          position: relative;
+          transition: 0.25s ease;
+          &:after {
+            @include pseudo();
+            left: 50px;
+            right: 50px;
+            height: 3px;
+            background-color: $main-color;
+            top: 65px;
+            transform: scaleX(0);
+            transform-origin: 50% 50%;
+            transition: 0.25s ease;
+          }
+        }
+        .depth02 {
+          background-color: $light-gray-color;
+          display: none;
+          justify-content: center;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          li {
+            &:hover {
+              a {
+                color: $hover-color;
+              }
+            }
+            a {
+              display: flex;
+              height: 60px;
+              padding: 0 30px;
+              justify-content: center;
+              align-items: center;
+              transition: 0.25s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+  .etc {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+}
