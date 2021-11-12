@@ -232,6 +232,58 @@
       }
     }
   }
+  // new end
+  #cs {
+    .contents {
+      width: 1440px;
+      margin: auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 49%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          overflow: hidden;
+          border-radius: 10px;
+          &:nth-child(1) {
+            background-image: url("../images/main/bg_contact.jpg");
+          }
+          &:nth-child(2) {
+            background-image: url("../images/main/bg_charge.jpg");
+          }
+          a {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+
+            .txtBox {
+              color: $white-color;
+              strong {
+                font-size: $large-size;
+                display: block;
+                margin-bottom: 10px;
+              }
+            }
+            .btn {
+              @include flexCenter();
+              background-color: $text-color;
+              color: #fff;
+              padding: 10px 20px;
+              border-radius: 100px;
+              font-size: $normal-size;
+              span {
+                color: $main-color;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1440px) {

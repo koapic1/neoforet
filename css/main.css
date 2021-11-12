@@ -89,3 +89,23 @@
 #main #news .contents .list li a .txtBox .txt { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 #main #news .contents .btns { margin-top: 50px; }
+
+#main #cs .contents { width: 1440px; margin: auto; }
+
+#main #cs .contents ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#main #cs .contents ul li { width: 49%; background-repeat: no-repeat; background-size: cover; overflow: hidden; border-radius: 10px; }
+
+#main #cs .contents ul li:nth-child(1) { background-image: url("../images/main/bg_contact.jpg"); }
+
+#main #cs .contents ul li:nth-child(2) { background-image: url("../images/main/bg_charge.jpg"); }
+
+#main #cs .contents ul li a { height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 30px; }
+
+#main #cs .contents ul li a .txtBox { color: #fff; }
+
+#main #cs .contents ul li a .txtBox strong { font-size: 2rem; display: block; margin-bottom: 10px; }
+
+#main #cs .contents ul li a .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #111111; color: #fff; padding: 10px 20px; border-radius: 100px; font-size: 1.4rem; }
+
+#main #cs .contents ul li a .btn span { color: #1dcb5d; margin-left: 10px; }
