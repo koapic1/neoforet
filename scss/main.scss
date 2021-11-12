@@ -3,9 +3,9 @@
 .titleBox {
   line-height: 1.5;
   h2 {
+    margin-bottom: 50px;
     font-size: $h2;
     font-weight: 600;
-    margin-bottom: 50px;
   }
   p {
     font-size: $medium-size;
@@ -99,34 +99,43 @@
           bottom: 50px;
           padding: 15px 30px;
           border: 1px solid $text-color;
+          transition: 0.25s ease;
           border-radius: 100px;
           @include flexCenter();
-          transition: 0.25s ease;
           span {
             margin-left: 20px;
             color: $main-color;
           }
           &:hover {
-            background-color: $text-color;
             color: $white-color;
+            background-color: $text-color;
           }
         }
       }
     }
     .btns {
+      display: flex;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 2;
-      display: flex;
       button {
+        background-color: #fff;
         @include box(100px);
         @include flexCenter();
-        background-color: #fff;
         span {
           font-size: $x-large-size;
         }
       }
+    }
+  }
+  // product end
+
+  #news {
+    padding: 100px 0;
+    .contents {
+      width: 1440px;
+      margin: auto;
     }
   }
 }

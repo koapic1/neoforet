@@ -37,6 +37,22 @@
   $shadow: unquote($shadow);
   text-shadow: $shadow;
 }
+@mixin longShadowTrans($bg-color: #000, $direction: right, $num: 100) {
+  $shadow: "";
+  @if ($direction == right) {
+    @for $i from 1 to $num {
+      $shadow: $shadow + $i + "px " + $i + "px 0px " + rgba($bg-color, ($num - $i * 1.2) / $num) + ",";
+    }
+    $shadow: $shadow + $num + "px " + $num + "px 0px " + rgba($bg-color, 0) + ";";
+  } @else {
+    @for $i from 1 to $num {
+      $shadow: $shadow + $i * -1 + "px " + $i + "px 0px " + rgba($bg-color, ($num - $i * 1.2) / $num) + ",";
+    }
+    $shadow: $shadow + $num * -1 + "px " + $num + "px 0px " + rgba($bg-color, 0) + ";";
+  }
+  $shadow: unquote($shadow);
+  text-shadow: $shadow;
+}
 
 // @mixin transition($time: 0.25s) {
 //   transition: $time ease;
