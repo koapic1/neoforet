@@ -11,6 +11,32 @@
     font-size: $medium-size;
   }
 }
+
+.btns {
+  display: flex;
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  .btn {
+    border: 1px solid $border-color;
+    border-radius: 100px;
+    transition: 0.25s ease;
+    @include flexCenter();
+  }
+  .transition:hover {
+    background-color: $text-color;
+    border-color: $text-color;
+    color: #fff;
+  }
+  .large {
+    height: 60px;
+    padding: 0 50px;
+  }
+}
+
 #main {
   #mainVisual {
     li {
@@ -121,6 +147,8 @@
       z-index: 2;
       button {
         background-color: #fff;
+        border-radius: 0;
+        border: none;
         @include box(100px);
         @include flexCenter();
         span {
@@ -136,6 +164,82 @@
     .contents {
       width: 1440px;
       margin: auto;
+      .list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        li {
+          width: 31.33%;
+          a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid $light-gray-color;
+            border-radius: 20px;
+            transition: 0.25s ease;
+            &:hover {
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+              .img {
+                transform: scale(1.15);
+              }
+              .txtBox {
+                transform: translateY(0);
+              }
+            }
+            &:before {
+              content: "";
+              display: block;
+              padding-top: 80%;
+            }
+            .img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              background-size: cover;
+              transition: 0.25s ease;
+            }
+            .txtBox {
+              position: absolute;
+              background-color: #fff;
+              padding: 30px;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              transform: translateY(50px);
+              box-sizing: border-box;
+              transition: 0.25s ease;
+              h3 {
+                font-size: $h3;
+                @include multiEllipsis();
+                margin-bottom: 30px;
+              }
+              .date {
+                margin-bottom: 30px;
+              }
+              .txt {
+                @include ellipsis();
+              }
+            }
+          }
+        }
+      }
+      .btns {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1440px) {
+  #main {
+    #news {
+      .contents {
+        //width: 100%;
+      }
     }
   }
 }
