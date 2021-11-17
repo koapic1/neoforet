@@ -14,13 +14,42 @@
         display: flex;
         align-items: center;
         li {
+            &:first-child {
+                a::before {
+                    display: none;
+                }
+            }
+            a {
+                display: flex;
+                &::before {
+                    content: "chevron_right";
+                    display: block;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+.subTitle {
+    font-size: $x-large-size;
+    font-weight: 500;
+    margin: 50px 0;
+}
+#lnb {
+    ul {
+        display: flex;
+        li {
+            margin-right: 20px;
+            &.on a {
+                background-color: $main-color;
+                color: $white-color;
+                font-weight: 500;
+            }
             a {
                 display: block;
-                padding-left: 30px;
-                &::before {
-                    content: "e5cc";
-                    display: block;
-                }
+                padding: 20px;
+                background-color: $light-gray-color;
+                border-radius: 100px;
             }
         }
     }
