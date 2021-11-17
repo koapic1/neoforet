@@ -1,4 +1,4 @@
-<? include("../include/header.html") ?>
+<?php include("../include/header.html") ?>
 <div id="subContentsWrap">
     <div id="subContents">
         <div id="contents">
@@ -92,4 +92,4 @@
         </div>
     </div>
 </div>
-<? include("../include/footer.html") ?>
+<?php include("../include/footer.html") ?>

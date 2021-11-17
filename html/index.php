@@ -1,4 +1,4 @@
-<? include("../include/header.html"); ?>
+<?php include("../include/header.html"); ?>
 <main id="main">
   <div id="mainVisual">
     <ul class="swiper-wrapper">
@@ -141,4 +141,4 @@
   <!-- cs end -->
 </main>
 <!-- main end -->
-<? include("../include/footer.html"); ?>
+<?php include("../include/footer.html"); ?>
