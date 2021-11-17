@@ -26,6 +26,84 @@
                     <li class="on"><a href="">샘플신청</a></li>
                 </ul>
             </nav>
+            <div class="boradBox">
+                <div class="info">
+                    <p>신청 내용에 개인 정보를 기재하시는 경우, 답변 완료 후 임의로 삭제될 수 있사오니 개인 정보 기재는 삼가주세요.</p>
+                    <p><span class="require">*</span> 항목은 필수 입력항목입니다.</p>
+                </div>
+                <table class="board write">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 40%;">
+                        <col style="width: 10%;">
+                        <col style="width: 40%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">회사명<span class="require">*</span></th>
+                            <td><input type="text" name="" id=""></td>
+                            <th scope="row">이름<span class="require">*</span></th>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대전화<span class="require">*</span></th>
+                            <td><input type="text" name="" id=""></td>
+                            <th scope="row">이메일<span class="require">*</span></th>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">샘플종류<span class="require">*</span></th>
+                            <td colspan="3">
+                                <select name="" id="">
+                                    <option value="">네오포레 CUP</option>
+                                    <option value="">네오포레 STRAW</option>
+                                    <option value="">네오포레 완충재</option>
+                                    <option value="">네오포레 FLEX</option>
+                                    <option value="">펄프 몰드</option>
+                                    <option value="">바이오플라스틱</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소<span class="require">*</span></th>
+                            <td colspan="3">
+                                <div>
+                                    <input type="text" name="" id="" readonly>
+                                    <button><span class="material-icons">search</span>우편번호 검색</button>
+                                </div>
+                                <div>
+                                    <input type="text" name="" id="" readonly>
+                                    <input type="text" name="" id="" placeholder="나머지 주소 입력">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">제목<span class="require">*</span></th>
+                            <td colspan="3"><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">내용<span class="require">*</span></th>
+                            <td colspan="3"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">첨부파일</th>
+                            <td colspan="3"><input type="file" name="" id=""></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="agreeBox">
+                    <div class="agree">
+                        <div>
+                            <label><span>개인정보 수집에 동의합니다.</span><input type="checkbox" name="" id=""></label>
+                            <button>전문보기</button>
+                        </div>
+                        <div>
+                            <label><span>만 14세 이상입니다.</span><input type="checkbox" name="" id=""></label>
+                        </div>
+                    </div>
+                    <button type="submit">확인</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
