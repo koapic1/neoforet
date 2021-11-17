@@ -1,0 +1,27 @@
+@import "vars";
+@import "mixins";
+
+#subContentsWrap {
+    margin-top: 160px;
+    padding: 100px 0;
+    #contents {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+.breadCrumb {
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            a {
+                display: block;
+                padding-left: 30px;
+                &::before {
+                    content: "e5cc";
+                    display: block;
+                }
+            }
+        }
+    }
+}
