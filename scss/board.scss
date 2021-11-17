@@ -169,9 +169,27 @@
 .faqBox {
     ul {
         li {
+            &.on {
+                dt {
+                    .icon::before {
+                        transform: rotate(45deg);
+                    }
+                    .icon::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
             dt {
                 display: flex;
                 align-items: center;
+                border-bottom: 1px solid $light-gray-color;
+                cursor: pointer;
+                &:hover {
+                    .icon::before,
+                    .icon::after {
+                        background-color: $main-color;
+                    }
+                }
                 .category {
                     display: block;
                     height: 100px;
@@ -192,7 +210,9 @@
                         position: absolute;
                         top: 50%;
                         left: 50%;
+                        margin-left: -3px;
                         transform: rotate(-45deg);
+                        transition: 0.25s;
                     }
                     &::after {
                         content: "";
@@ -203,7 +223,9 @@
                         position: absolute;
                         top: 50%;
                         right: 50%;
+                        margin-right: -3px;
                         transform: rotate(45deg);
+                        transition: 0.25s;
                     }
                 }
             }
@@ -211,6 +233,7 @@
                 background-color: $light-gray-color;
                 padding: 50px 50px 50px 150px;
                 line-height: 1.5;
+                display: none;
                 p {
                     margin-bottom: 20px;
                 }
