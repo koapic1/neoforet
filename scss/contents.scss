@@ -22,6 +22,7 @@
             a {
                 display: flex;
                 &::before {
+                    font-family: "Material Icons";
                     content: "chevron_right";
                     display: block;
                     padding: 0 10px;

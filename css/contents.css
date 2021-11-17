@@ -8,7 +8,7 @@
 
 .breadCrumb ul li a { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.breadCrumb ul li a::before { content: "chevron_right"; display: block; padding: 0 10px; }
+.breadCrumb ul li a::before { font-family: "Material Icons"; content: "chevron_right"; display: block; padding: 0 10px; }
 
 .subTitle { font-size: 4.8rem; font-weight: 500; margin: 50px 0; }
 
