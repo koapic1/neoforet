@@ -17,7 +17,7 @@
                     <li><a href="">온라인 문의</a></li>
                     <li><a href="">담당자 연락처</a></li>
                     <li><a href="">제품 카탈로그</a></li>
-                    <li><a href="">샘플신청</a></li>
+                    <li><a href="sample.php">샘플신청</a></li>
                 </ul>
             </nav>
             <div class="faqBox boardBox">
