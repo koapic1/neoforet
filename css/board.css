@@ -73,3 +73,5 @@
 .faqBox ul li dd { background-color: #f5f5f5; padding: 50px 50px 50px 150px; line-height: 1.5; display: none; }
 
 .faqBox ul li dd p { margin-bottom: 20px; }
+
+.contact { display: -webkit-box; display: -ms-flexbox; display: flex; }
