@@ -68,9 +68,11 @@
 
 #main #news .titleBox { text-align: center; }
 
-#main #news .contents { padding: 0 10px; overflow: hidden; }
+#main #news .contents { overflow: hidden; }
 
 #main #news .contents .list { margin-top: 50px; }
+
+#main #news .contents .list li { width: 80%; }
 
 #main #news .contents .list li a { display: block; position: relative; overflow: hidden; border: 1px solid #f5f5f5; border-radius: 20px; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
 
