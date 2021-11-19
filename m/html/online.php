@@ -19,11 +19,11 @@
             <nav id="lnb">
                 <h3 class="hidden">local navigation bar</h3>
                 <ul>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
                     <li class="on"><a href="">온라인 문의</a></li>
-                    <li><a href="contact.html">담당자 연락처</a></li>
+                    <li><a href="contact.php">담당자 연락처</a></li>
                     <li><a href="">제품 카탈로그</a></li>
-                    <li><a href="sample.html">샘플신청</a></li>
+                    <li><a href="sample.php">샘플신청</a></li>
                 </ul>
             </nav>
             <div class="boardBox">
